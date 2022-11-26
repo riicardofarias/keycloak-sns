@@ -18,7 +18,11 @@ Here are all the environment variables that need to be defined.
 * AWS_REGION: AWS Region
 
 ## Getting Started
-After fork/clone the repo.
+
+After fork/clone the repo, build the jar file using:
 ```
-mvn clean package
+mvn package
 ```
+
+Copy the jar to the Keycloak server:
+`target/keycloak-sns-listener-1.0.jar` to `/opt/keycloak/providers` or `/opt/jboss/keycloak/standalone/deployments/`
